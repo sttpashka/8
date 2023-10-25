@@ -1,0 +1,121 @@
+﻿<Window x:Class="PracticalWork8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PracticalWork8"
+        
+        xmlns:viewmodel="clr-namespace:PracticalWork8.ViewModel"
+        d:DataContext="{d:DesignInstance Type=viewmodel:MainViewModel}"
+        
+        mc:Ignorable="d"
+        
+        WindowStartupLocation="CenterScreen"
+        Background="{DynamicResource Primary}"
+        
+        Title="{DynamicResource Title}" Height="Auto" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBox
+            Grid.Row="0"
+            Height="160"
+            Margin="20,20"
+            FontSize="16"
+            Padding="5"
+            VerticalAlignment="Top"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            TextWrapping="WrapWithOverflow"
+            Background="{DynamicResource Secondary}"
+            Foreground="{DynamicResource Text}"
+            Text="{Binding Text, Mode=TwoWay}"
+        />
+
+        <Button
+            Grid.Row="1"
+            Margin="20,10"
+            Background="{DynamicResource Secondary}"
+            Foreground="{DynamicResource Text}"
+            FontSize="14"
+            Padding="5"
+            VerticalAlignment="Top"
+            Content="{DynamicResource Serialize}"
+            Command="{Binding SerializeCommand}"
+            ToolTip="{DynamicResource Save}"
+        />
+
+        <Button
+            Grid.Row="2"
+            Margin="20,10"
+            Background="{DynamicResource Secondary}"
+            Foreground="{DynamicResource Text}"
+            FontSize="14"
+            Padding="5"
+            VerticalAlignment="Top"
+            Content="{DynamicResource Deserialize}"
+            Command="{Binding DeserializeCommand}"
+            ToolTip="{DynamicResource Load}"
+        />
+
+        <StackPanel
+            VerticalAlignment="Top"
+            Grid.Row="6"
+            Orientation="Horizontal"
+            HorizontalAlignment="Left"
+            Margin="20,10">
+
+            <GroupBox
+                Header="{DynamicResource Theme}"
+                Margin="10"
+                Foreground="{DynamicResource Text}">
+                <StackPanel
+                    Orientation="Vertical">
+                    <RadioButton
+                        Content="{DynamicResource LightTheme}"
+                        Margin="5"
+                        Background="{DynamicResource Secondary}"
+                        Foreground="{DynamicResource Text}"
+                        Command="{Binding ChangeThemeCommand}"
+                        CommandParameter="LightTheme"/>
+                    <RadioButton
+                        Content="{DynamicResource DarkTheme}"
+                        Margin="5"
+                        Background="{DynamicResource Secondary}"
+                        Foreground="{DynamicResource Text}"
+                        Command="{Binding ChangeThemeCommand}"
+                        CommandParameter="DarkTheme"/>
+                </StackPanel>
+            </GroupBox>
+
+            <GroupBox
+                Header="{DynamicResource Language}"
+                Margin="10"
+                Foreground="{DynamicResource Text}">
+                <StackPanel
+                    Orientation="Vertical">
+                    <RadioButton
+                        Content="Русский"
+                        Margin="5"
+                        Background="{DynamicResource Secondary}"
+                        Foreground="{DynamicResource Text}"
+                        Command="{Binding ChangeLanguageCommand}"
+                        CommandParameter="RussianLanguage"/>
+                    <RadioButton
+                        Content="English"
+                        Margin="5"
+                        Background="{DynamicResource Secondary}"
+                        Foreground="{DynamicResource Text}"
+                        Command="{Binding ChangeLanguageCommand}"
+                        CommandParameter="EnglishLanguage"/>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+    </Grid>
+</Window>

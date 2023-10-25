@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:v="clr-namespace:System;assembly=mscorlib">
+    <v:String x:Key="Title">Professional library user</v:String>
+    <v:String x:Key="String1">«Lord of the Underworld», «Ruler of the South», «King of Death and Justice».</v:String>
+    <v:String x:Key="String2">*The string is cleared.*</v:String>
+    <v:String x:Key="Serialize">Serialize Text</v:String>
+    <v:String x:Key="Save">Save Text to pr8json.json on Desktop</v:String>
+    <v:String x:Key="Deserialize">Deserialize Text</v:String>
+    <v:String x:Key="Load">Load Text from pr8json.json on Desktop</v:String>
+    <v:String x:Key="Theme">Theme</v:String>
+    <v:String x:Key="LightTheme">Light Theme</v:String>
+    <v:String x:Key="DarkTheme">Dark Theme</v:String>
+    <v:String x:Key="Language">Language</v:String>
+</ResourceDictionary>

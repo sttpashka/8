@@ -1,0 +1,14 @@
+﻿<Application x:Class="PracticalWork8.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:PracticalWork8"
+             StartupUri="View/MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/KoshenskiyTheme;component/Themes/LightTheme.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/KoshenskiyLanguage;component/Languages/RussianLanguage.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

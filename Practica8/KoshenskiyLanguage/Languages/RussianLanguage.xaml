@@ -1,0 +1,15 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:v="clr-namespace:System;assembly=mscorlib">
+    <v:String x:Key="Title">Профессиональный использователь библиотек</v:String>
+    <v:String x:Key="String1">«Владыка преисподней», «Миродержец юга», «Царь смерти и справедливости».</v:String>
+    <v:String x:Key="String2">*Строка очищена*</v:String>
+    <v:String x:Key="Serialize">Сериализовать текст</v:String>
+    <v:String x:Key="Save">Сохранить текст в файл pr8json.json на рабочем столе</v:String>
+    <v:String x:Key="Deserialize">Десериализовать текст</v:String>
+    <v:String x:Key="Load">Выгрузить текст из файла pr8json.json на рабочем столе</v:String>
+    <v:String x:Key="Theme">Тема</v:String>
+    <v:String x:Key="LightTheme">Светлая тема</v:String>
+    <v:String x:Key="DarkTheme">Тёмная тема</v:String>
+    <v:String x:Key="Language">Язык</v:String>
+</ResourceDictionary>
